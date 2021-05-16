@@ -1,0 +1,150 @@
+/* Set margin and padding zero*/
+*{
+    margin: 0;
+    padding: 0;
+    --def: #96B7C4; 	
+	--inv: #fff;
+   
+}
+body{
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);   
+}
+/* navbar styles*/
+.navbar{
+   background-color: transparent;
+   width: 100%;
+   border-bottom:3px white solid ;
+}
+.nav-item{
+    list-style-type: none;
+}
+/* Question palate style*/
+.col-1{
+ background-color: red;
+ text-align: center;
+ border-radius: 50px;
+}
+/* style for Timer */
+#timer{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    width:auto;
+    height: 70px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+
+}
+#timer:hover{
+   border-bottom:5px tomato solid;
+   background-color: white;
+   opacity: 0.4;
+}
+.row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Question{ 
+    margin: 100px;
+    padding: 30px;    
+}
+/* Question palate style*/
+.col-1{
+    background-color:white;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+}
+/* Button styles*/
+.button{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    
+} 
+.btn{
+    width:100px;
+    height: 60px;
+    margin-left: 60px;
+}
+/* Main container styles*/
+.main-fl{
+    margin-top:20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* For question palate*/
+.color{
+    background-color: chartreuse;
+}
+.nocolor{
+    background-color: red;
+}
+/* Button styles*/
+.btn1 {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 1.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn1:before, .btn1:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn1:hover {
+	color: var(--def);
+	transition-delay: .5s;
+}
+
+.btn1:hover:before {
+	transition-delay: 0s;
+}
+
+.btn1:hover:after {
+	background: var(--inv);
+	transition-delay: .35s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid var(--inv);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
